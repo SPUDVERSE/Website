@@ -5,67 +5,123 @@
 <title>SPUDZ | Official SPUDVERSE</title>
 <meta name="description" content="Official SPUDZ website for the SPUDVERSE ecosystem on IGRA. Token, NFTs, staking, liquidity, and community resources.">
 <style>
-:root{--bg:#050b0d;--panel:#0d1f24;--line:#1e5057;--teal:#50ffd8;--text:#eefefd;--muted:#a6c7c3}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:radial-gradient(circle at top,#0d3638,#050b0d 55%);color:var(--text)}
-nav{position:sticky;top:0;background:rgba(5,11,13,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:14px 18px;z-index:5}
-nav a{color:var(--text);text-decoration:none;margin-right:14px;font-weight:700}.brand{color:var(--teal);font-size:22px}
-.hero{text-align:center;padding:70px 18px 50px;background:linear-gradient(135deg,#071417,#0a2e31)}
-.hero h1{font-size:68px;margin:0;color:var(--teal);letter-spacing:2px;text-shadow:0 0 25px rgba(80,255,216,.45)}
-.hero p{max-width:760px;margin:16px auto;color:var(--muted);font-size:18px;line-height:1.6}
-.btn{display:inline-block;margin:7px;padding:13px 18px;background:var(--teal);color:#001b18;border-radius:12px;text-decoration:none;font-weight:900}
+:root{--bg:#03080a;--panel:#07191d;--card:#0b2429;--teal:#28ffd8;--orange:#ff9a22;--text:#f4ffff;--muted:#a9c9c5}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:radial-gradient(circle at top,#0b373b,#03080a 55%);color:var(--text)}
+a{color:var(--teal)}nav{position:sticky;top:0;z-index:5;background:rgba(3,8,10,.9);border-bottom:1px solid rgba(40,255,216,.25);padding:14px 18px;backdrop-filter:blur(10px)}
+nav b{color:var(--teal);font-size:22px;margin-right:18px}nav a{text-decoration:none;color:white;margin-right:12px;font-weight:800;font-size:14px}
+.hero{min-height:680px;background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.35)),url('ResizedImage_ResizedImage_1782001644854[1].png');background-size:cover;background-position:center;display:grid;grid-template-columns:1.05fr .95fr;gap:25px;align-items:center;padding:60px 5vw}
+h1{font-size:clamp(64px,13vw,160px);line-height:.8;margin:0;color:var(--teal);text-shadow:0 0 25px rgba(40,255,216,.65);letter-spacing:-5px}
+.tag{display:inline-block;background:var(--teal);color:#001;padding:8px 14px;border-radius:999px;font-weight:900;margin-bottom:16px;transform:rotate(-3deg)}
+.hero p{font-size:20px;line-height:1.5;max-width:560px}.mascot{width:min(420px,90vw);border-radius:28px;box-shadow:0 0 60px rgba(40,255,216,.35);border:2px solid rgba(40,255,216,.45)}
+.btn{display:inline-block;margin:8px 7px 8px 0;padding:14px 20px;border-radius:12px;background:var(--teal);color:#001;text-decoration:none;font-weight:900;box-shadow:0 0 20px rgba(40,255,216,.25)}
 .btn.alt{background:transparent;color:var(--teal);border:1px solid var(--teal)}
-section{max-width:1100px;margin:auto;padding:34px 18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.card{background:rgba(13,31,36,.92);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 0 25px rgba(0,0,0,.25)}
-h2{color:var(--teal);margin-top:0}.small{font-size:13px;color:var(--muted);word-break:break-all}
-li{margin:8px 0}a{color:var(--teal)}footer{text-align:center;padding:34px;color:var(--muted);border-top:1px solid var(--line)}
-.badge{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:7px 12px;color:var(--teal);margin-bottom:12px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;padding:22px 5vw;background:#041012;border-top:1px solid rgba(40,255,216,.35);border-bottom:1px solid rgba(40,255,216,.35)}
+.stat{background:rgba(11,36,41,.9);border:1px solid rgba(40,255,216,.35);border-radius:16px;padding:16px}.stat small{color:var(--muted);font-weight:900}.stat b{display:block;font-size:22px;color:var(--teal);margin-top:8px}
+section{max-width:1200px;margin:auto;padding:40px 18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:linear-gradient(180deg,rgba(11,36,41,.95),rgba(4,16,18,.95));border:1px solid rgba(40,255,216,.35);border-radius:20px;padding:24px;box-shadow:0 0 30px rgba(0,0,0,.25)}
+h2{color:var(--teal);font-size:32px;margin:0 0 14px;text-transform:uppercase}p,li{color:#dff;line-height:1.55}.muted{color:var(--muted)}.contract{font-size:13px;word-break:break-all;color:var(--muted)}
+.nft a{display:block;background:rgba(40,255,216,.08);border:1px solid rgba(40,255,216,.25);padding:12px;border-radius:12px;margin:10px 0;text-decoration:none;font-weight:900}
+.orange{color:var(--orange)}footer{text-align:center;padding:35px;color:var(--muted);border-top:1px solid rgba(40,255,216,.25)}
+@media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center;min-height:auto;padding:45px 18px}.hero p{margin:auto}.mascot{margin:auto}nav a{font-size:12px;margin-right:7px}}
 </style>
 </head>
 <body>
-<nav><span class="brand">🥔 SPUDZ</span> <a href="#about">About</a><a href="#token">Token</a><a href="#nfts">NFTs</a><a href="#links">Links</a></nav>
+
+<nav>
+<b>🥔 SPUDZ</b>
+<a href="#about">About</a><a href="#token">Token</a><a href="#nfts">NFTs</a><a href="#utility">Utility</a><a href="#links">Links</a>
+</nav>
 
 <div class="hero">
-<span class="badge">Official SPUDVERSE Website • IGRA Network</span>
+<div>
+<span class="tag">OFFICIAL SPUDVERSE TOKEN</span>
 <h1>SPUDZ</h1>
-<p>SPUDZ is the community token powering the SPUDVERSE ecosystem — original potato-themed art, NFT collections, staking, liquidity, memes, and community rewards on IGRA.</p>
+<p><b>Powered by the community on IGRA.</b><br>Original art, NFTs, staking, liquidity, memes, rewards, and potato-powered ecosystem growth.</p>
 <a class="btn" href="https://defi.kaspa.com/swap/tokens/0x1516ea6260cc2070d6e716362e0ac593c784e865">Buy / Add Liquidity</a>
 <a class="btn alt" href="https://lyceumprotocol.com/spudz-academy-/nft">Stake NFTs</a>
 <a class="btn alt" href="https://x.com/Spudzbynotshore">Official X</a>
 </div>
+<img class="mascot" src="ResizedImage_IMG_20260528_194243_296[1].png" alt="SPUDZ mascot">
+</div>
+
+<div class="stats">
+<div class="stat"><small>TOKEN</small><b>SPUDZ</b></div>
+<div class="stat"><small>NETWORK</small><b>IGRA</b></div>
+<div class="stat"><small>TOTAL SUPPLY</small><b>28.7B</b></div>
+<div class="stat"><small>BURNED</small><b>3.45B+</b></div>
+<div class="stat"><small>CIRCULATING</small><b>~25.24B</b></div>
+</div>
 
 <section id="about">
 <div class="grid">
-<div class="card"><h2>What is SPUDZ?</h2><p>SPUDZ is a community-driven meme token built around the SPUDVERSE ecosystem. The project connects original artwork, NFT collections, staking, liquidity, and community participation into one growing potato-powered brand.</p></div>
-<div class="card"><h2>Why SPUDVERSE?</h2><p>SPUDVERSE started from hand-drawn potato parody art and grew into a wider ecosystem of collectibles, token rewards, staking, and community events.</p></div>
+<div class="card">
+<h2>About SPUDZ</h2>
+<p>SPUDZ is the fuel behind the SPUDVERSE — a community-driven ecosystem built around potato-themed art, collectibles, memes, staking, liquidity, and rewards.</p>
+</div>
+<div class="card">
+<h2>Community First</h2>
+<p>This started with original hand-drawn potato parody art and grew into NFT collections, token utility, staking, and community-led events across the IGRA/Kaspa ecosystem.</p>
+</div>
 </div>
 </section>
 
 <section id="token">
 <div class="grid">
-<div class="card"><h2>Token Info</h2><p><b>Token:</b> SPUDZ</p><p><b>Network:</b> IGRA</p><p><b>Pair:</b> SPUDZ / WiKAS</p><p><b>Contract:</b><br><span class="small">0x1516ea6260cc2070d6e716362e0ac593c784e865</span></p></div>
-<div class="card"><h2>Tokenomics</h2><p><b>Total Supply:</b> 28,700,000,000</p><p><b>Burned:</b> 3,453,982,608+</p><p><b>Circulating:</b> ~25,246,017,392</p><p><b>Burn Wallet:</b><br><span class="small">0x000000000000000000000000000000000000dEaD</span></p></div>
+<div class="card">
+<h2>Token Info</h2>
+<p><b>Pair:</b> SPUDZ / WiKAS</p>
+<p><b>Contract:</b></p>
+<p class="contract">0x1516ea6260cc2070d6e716362e0ac593c784e865</p>
+</div>
+<div class="card">
+<h2>Tokenomics</h2>
+<p><b>Total Supply:</b> 28,700,000,000</p>
+<p><b>Burned:</b> 3,453,982,608+</p>
+<p><b>Circulating:</b> ~25,246,017,392</p>
+<p class="contract"><b>Burn Wallet:</b><br>0x000000000000000000000000000000000000dEaD</p>
+</div>
 </div>
 </section>
 
 <section id="nfts">
-<div class="card"><h2>NFT Collections</h2><p>SPUDVERSE includes hand-drawn and curated NFT collections connected to the wider SPUDZ ecosystem.</p>
-<ul>
-<li><a href="https://kaspa.com/nfts/collections/EvilSpud">EvilSpud</a> — horror-inspired potato parody collection.</li>
-<li><a href="https://kaspa.com/nfts/collections/SPUDSTARZ">SPUDSTARZ</a> — movie-icon inspired pixel-style collection.</li>
-<li><a href="https://kaspa.com/nfts/collections/YonaSpud">YonaSpud</a> — collab collection with Yonatoshi-inspired traits.</li>
-<li><b>SNESpudz</b> — upcoming 77-piece video game parody collection.</li>
-</ul></div>
+<div class="card nft">
+<h2>NFT Collections</h2>
+<p>SPUDVERSE includes hand-drawn and curated NFT collections connected to the wider SPUDZ ecosystem.</p>
+<a href="https://kaspa.com/nfts/collections/EvilSpud">🔥 EvilSpud — horror-inspired potato parody collection</a>
+<a href="https://kaspa.com/nfts/collections/SPUDSTARZ">🎬 SPUDSTARZ — movie-icon inspired pixel-style collection</a>
+<a href="https://kaspa.com/nfts/collections/YonaSpud">🟣 YonaSpud — Yonatoshi-inspired collab collection</a>
+<a href="#">🎮 SNESpudz — upcoming 77-piece video game parody collection</a>
+</div>
 </section>
 
-<section>
+<section id="utility">
 <div class="grid">
-<div class="card"><h2>Utility</h2><ul><li>NFT staking through Lyceum Protocol</li><li>SPUDZ/WiKAS liquidity through Kaspa DeFi</li><li>Community rewards and ecosystem participation</li><li>Upcoming SNESpudz airdrop mechanics and events</li></ul></div>
-<div class="card"><h2>Roadmap</h2><ul><li>✅ GeckoTerminal profile</li><li>✅ Official website</li><li>✅ NFT staking</li><li>✅ Liquidity and trading</li><li>⬜ CoinGecko resubmission</li><li>⬜ SNESpudz launch</li></ul></div>
+<div class="card">
+<h2>Utility</h2>
+<ul>
+<li>NFT staking through Lyceum Protocol</li>
+<li>SPUDZ/WiKAS liquidity through Kaspa DeFi</li>
+<li>Community rewards and ecosystem participation</li>
+<li>Upcoming SNESpudz airdrops and events</li>
+</ul>
+</div>
+<div class="card">
+<h2>Roadmap</h2>
+<ul>
+<li>✅ GeckoTerminal profile</li>
+<li>✅ Official website</li>
+<li>✅ NFT staking</li>
+<li>✅ Liquidity and trading</li>
+<li>⬜ CoinGecko resubmission</li>
+<li>⬜ SNESpudz launch</li>
+</ul>
+</div>
 </div>
 </section>
 
 <section id="links">
-<div class="card"><h2>Official Links</h2>
+<div class="card">
+<h2>Official Links</h2>
 <a class="btn" href="https://defi.kaspa.com/swap/tokens/0x1516ea6260cc2070d6e716362e0ac593c784e865">DEX / Liquidity</a>
 <a class="btn" href="https://lyceumprotocol.com/spudz-academy-/nft">NFT Staking</a>
 <a class="btn" href="https://x.com/Spudzbynotshore">X</a>
@@ -73,6 +129,10 @@ li{margin:8px 0}a{color:var(--teal)}footer{text-align:center;padding:34px;color:
 </div>
 </section>
 
-<footer>Built by the SPUDVERSE community on IGRA. 🥔</footer>
+<footer>
+<b class="orange">SPUD POWERED.</b><br>
+Built by the SPUDVERSE community on IGRA. 🥔
+</footer>
+
 </body>
   </html>
